@@ -1,0 +1,259 @@
+/* Poppins Link  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+
+}
+/* navigation top section  */
+.bannersection{
+    display:flex;
+    justify-content: space-between;
+    background-color: #2D25A0;
+    color:#FFFFFF;  
+}
+.bannersection:hover .bannerimg img{
+    transform: scale(1.2);
+    transition: transform 2s ease;
+}
+
+.webheading{
+    font-size: 64px;
+    margin-left: 156px;
+    margin-top: 207px;
+    margin-bottom: 169px;
+}
+.webheading > h1{
+    margin:0;
+}
+.livebutton{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px ;
+    background-color: #E02C6D;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 27px;  
+}
+.bannerimg{
+    width:556.01px;
+    height:438px;
+    margin-right: 140.99px;
+    margin-top: 153px;
+    margin-bottom: 86px;
+}
+.bannerimg img{
+    width:100%;
+}
+/* player data section  */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px;  
+}
+.allplayers{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:27px;
+    grid-column-gap:30px;
+    margin-left: 180px;
+    margin-right: 210px;
+    margin-top: 70px;
+    
+}
+.singleplayerarticle{
+    padding: 15px;
+    margin:0px;
+    width: 300px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.playername > h3{
+    padding-top: 16px;
+    padding-bottom: 10px;
+    margin:0px;  
+    font-size: 28px;
+    height:40px;
+}
+.playerimg{
+    width:300px;
+    height:256px;
+}
+.playerimg img{
+    width:100%;
+}
+.playerdetail > p{
+    /* padding-top:10px; */
+    margin:0;
+    font-size: 16px;
+    color: #6C6C6C;
+    height:104px;  
+}
+
+/*-------------- 
+higlights
+------------- */
+.highlights{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 158px;
+}
+.highlightsdetail{
+    margin-top: 224px;
+    width:466px;
+    height:309px;
+    margin-left: 182px;
+    margin-right: 69px;
+}
+.highlightsdetail>h2{
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.highlightsdetail> .higlightspara{
+    margin-top: 0;
+    color:gray;
+}
+.highlightsimg{
+    width:567px;
+    height:427px;
+    margin-top: 165px;
+    margin-right: 156px;
+}
+.highlightsimg img{
+    width:100%;
+}
+/* video section bottom */
+.videosection > h2{
+    text-align: center;
+    color:black;
+    background-image: linear-gradient(#ECE9E6,#FFFFFF);
+    padding-top: 30px;
+    margin-top: 20px;
+}
+.videos{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url(images/pexel.jpg);
+    background-size: cover;
+    background-position-y: bottom;
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+}
+.audio{
+    display: none;
+}
+.playersvideo{
+    margin-right: 40px;
+    box-shadow: 0px 0px 40px rgba(48, 51, 52, 0.591); ;
+}
+
+/*----------
+    footer 
+ ----------- */
+ footer{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 50px;
+ }
+ .social{
+     text-decoration: none;
+     color:gray;
+     margin-right: 14px;
+     margin-left: 14px;
+ }
+ .footerimg{
+     width:483.87px;
+     height:110px;
+ }
+ .footerimg img{
+     width:100%;
+ }
+ .social{
+     
+ }
+
+ /* responsive code for mobile  */
+ @media only screen and (max-width:688px) {
+     .bannersection, .highlights, .videos, footer{
+         display: flex;
+         flex-direction: column;
+     }
+     .bannersection> .webheading{
+         font-size: 36px;
+         margin:112px 0 0 16px;
+    }
+     .bannersection> .bannerimg{
+         width: 100%;
+         margin:124px 16px 61.83px 0;
+     }
+     .allplayers{
+         display: grid;
+         grid-template-columns: repeat(1,100%);
+         margin-top: 47px;
+         margin-right: 15px;
+         margin-left: 15px;
+     } 
+     .singleplayerarticle{
+         width: 330px;
+         height:474px; 
+         grid-row-gap:24px;
+     }
+     .bannersection > .playerdetail{
+        width: 330px;
+        height:474px;
+        margin-bottom: 33px;
+     }
+      .playerimg{
+         width:330px;
+         height: 256px;
+     } 
+     .playername{
+         margin-top: 16px;
+     }
+     .highlights{
+         margin:60px 16px 0 16px;
+     }
+     .highlightsdetail > h2{
+         font-size: 30px;
+     }
+     .higlightspara{
+         margin-bottom: 24px;
+     }
+     .highlightsdetail{
+         margin:0;
+         width:329px;
+         height:299px;
+     }
+     .highlightsimg{
+         width:345px;
+         height:248px;
+         margin:29px 16px 0px 0px;
+     }
+     .highlightsimg img{
+         width:100%;
+     }
+     
+     .playersvideo{
+         width:370px;
+         height:320px;  
+     }
+     .videos{
+         padding-top: 10px;
+         padding-bottom: 10px;
+         background-image: none;
+     }
+     .footerimg{
+         width:271px;
+         height:63px;
+     }
+     .footerimg img{
+         width:100%;
+     }
+     
+ }
